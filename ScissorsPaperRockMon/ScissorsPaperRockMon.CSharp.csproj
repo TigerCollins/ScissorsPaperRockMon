@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\GridMovement\Grid.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridCell.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridMover.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\BrokenVector\FreeLowPolyPack\README.txt" />
