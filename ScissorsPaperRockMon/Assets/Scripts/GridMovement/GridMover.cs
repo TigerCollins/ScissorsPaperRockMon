@@ -13,21 +13,22 @@ public class GridMover : MonoBehaviour {
 
         var potentialUpCell = curCell.myGrid.GetCellAtIndex(curCell.x, newy);
 
-        if(potentialUpCell != null)
-        {
-            curCell = potentialUpCell;
-        }
+          if(potentialUpCell != null)
+         {
+        curCell = potentialUpCell;
+         }
     }
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
-        InvokeRepeating("MoveUp", 1, 1);	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        InvokeRepeating("MoveUp", 1, 1);
+    }
+
+    // Update is called once per frame
+    void Update()
     {
+        // InvokeRepeating("MoveUp", 1, 1);
         transform.position = Vector3.MoveTowards(transform.position, curCell.transform.position, speed * Time.deltaTime);
-	}
+    }
 }
