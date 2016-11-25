@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1c8674d64c47324cbf71d625379903c
-timeCreated: 1479914611
+timeCreated: 1480101393
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,11 @@ TextureImporter:
     21300018: Game Asset Sheet_5
     21300020: Game Asset Sheet_6
     21300022: Game Asset Sheet_7
+    21300024: Game Asset Sheet_8
+    21300026: Game Asset Sheet_10
+    21300028: Game Asset Sheet_11
+    21300030: Game Asset Sheet_12
+    21300032: Game Asset Sheet_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -73,7 +78,7 @@ TextureImporter:
         width: 324
         height: 366
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -86,7 +91,7 @@ TextureImporter:
         width: 352
         height: 385
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -99,7 +104,7 @@ TextureImporter:
         width: 373
         height: 373
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -112,7 +117,7 @@ TextureImporter:
         width: 786
         height: 394
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -151,7 +156,7 @@ TextureImporter:
         width: 33
         height: 713
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -215,6 +220,71 @@ TextureImporter:
         y: 943
         width: 170
         height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 463
+        width: 380
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 159
+        width: 397
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 299
+        width: 735
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 161
+        width: 691
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 526
+        width: 342
+        height: 342
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
