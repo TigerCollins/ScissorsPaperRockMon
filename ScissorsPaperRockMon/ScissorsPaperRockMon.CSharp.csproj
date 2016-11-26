@@ -73,6 +73,7 @@
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Asset Packs\Water Flow FREE\Scripts\WaterFlowFREEDemo.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleScript.cs" />
     <Compile Include="Assets\Scripts\GridMovement\Grid.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridCell.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridMover.cs" />
