@@ -3,18 +3,68 @@ using System.Collections;
 
 public class BattleScript : MonoBehaviour {
     public GameObject[] PlayerBattleOptions;
-    public int[] BattleOptions;
+    public GameObject[] EnemyOptions;
     int index;
 
     void Start()
     {
-        index = Random.Range(0, BattleOptions.Length);
+        
         print(index);
     }
 
     void Update()
     {
-        
+    }
+
+    public void BattleLoader()
+    {
+        index = Random.Range(0, EnemyOptions.Length); //Selects a random variable from the Battleoptions Array
+        ChampionTrainer();
+    }
+
+    public void ScissorsTrainer()
+    {      
+            EnemyOptions[0].SetActive(true); //... Set as active.
+            EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+            EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+    }
+
+    public void PaperTrainer()
+    {
+        EnemyOptions[1].SetActive(true); //... Set as active.
+        EnemyOptions[0].SetActive(false); // Disable this in hierarchy
+        EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+    }
+
+    public void RockTrainer()
+    {
+        EnemyOptions[2].SetActive(true); // Set as active.
+        EnemyOptions[0].SetActive(false); // Disable this in hierarchy
+        EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+    }
+
+    public void ChampionTrainer()
+    {
+        if (index == 0) //Checks to see if the object is active. If not active...
+        {
+            EnemyOptions[0].SetActive(true); //... Set as active.
+            EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+            EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+        }
+
+        if (index == 1) //Checks to see if the object is active. If not active...
+        {
+            EnemyOptions[1].SetActive(true); //... Set as active.
+            EnemyOptions[0].SetActive(false); // Disable this in hierarchy
+            EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+        }
+
+        if (index == 2) //Checks to see if the object is active. If not active...
+        {
+            EnemyOptions[2].SetActive(true); //... Set as active.
+            EnemyOptions[0].SetActive(false); // Disable this in hierarchy
+            EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+        }
     }
 
     public void BattleScissors()
@@ -24,6 +74,7 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[0].SetActive(true); //... Set as active.
             PlayerBattleOptions[1].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[2].SetActive(false); // Disable this in hierarchy
+            BattleLoader();
         }
     }
 
@@ -34,6 +85,7 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[1].SetActive(true); //... Set as active.
             PlayerBattleOptions[0].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[2].SetActive(false); // Disable this in hierarchy
+            BattleLoader();
         }
     }
 
@@ -44,6 +96,7 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[2].SetActive(true); //... Set as active.
             PlayerBattleOptions[0].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[1].SetActive(false); // Disable this in hierarchy
+            BattleLoader();
         }
     }
 }
