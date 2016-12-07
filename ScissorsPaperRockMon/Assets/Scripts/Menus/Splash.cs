@@ -3,11 +3,14 @@ using System.Collections;
 
 public class Splash : MonoBehaviour {
 
-	// Use this for initialization
-	void Start ()
+    //Audio
+    public AudioSource ButtonPress;
+
+    // Use this for initialization
+    void Start ()
     {
-	
-	}
+        ButtonPress = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -15,6 +18,7 @@ public class Splash : MonoBehaviour {
         if (Input.anyKey)
         {
             Application.LoadLevel("Menu");
+            ButtonPress.Play();
             print("pressed");
         }
 

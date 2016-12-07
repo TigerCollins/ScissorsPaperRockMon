@@ -3,11 +3,14 @@ using System.Collections;
 
 public class SceneController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start ()
+    //Audio
+    public AudioSource ButtonPress;
+
+    // Use this for initialization
+    void Start ()
     {
-	
-	}
+        ButtonPress = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -18,24 +21,28 @@ public class SceneController : MonoBehaviour {
     public void World()
     {
         //Loads level
+        ButtonPress.Play();
         Application.LoadLevel("World");
     }
 
     public void Credits()
     {
         //Loads the Credits
+        ButtonPress.Play();
         Application.LoadLevel("Credits");
     }
 
     public void Quit()
     {
         //Quits Game
+        ButtonPress.Play();
         Application.Quit();
     }
 
     public void Controls()
     {
         //Loads scene that displays the controls
+        ButtonPress.Play();
         Application.LoadLevel("Controls");
     }
 }
