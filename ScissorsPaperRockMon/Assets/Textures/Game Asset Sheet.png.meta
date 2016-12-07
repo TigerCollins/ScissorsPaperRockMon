@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1c8674d64c47324cbf71d625379903c
-timeCreated: 1480101393
+timeCreated: 1481106454
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -21,6 +21,7 @@ TextureImporter:
     21300028: Game Asset Sheet_11
     21300030: Game Asset Sheet_12
     21300032: Game Asset Sheet_13
+    21300034: Game Asset Sheet_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -285,6 +286,19 @@ TextureImporter:
         y: 526
         width: 342
         height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Asset Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 841
+        width: 199
+        height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

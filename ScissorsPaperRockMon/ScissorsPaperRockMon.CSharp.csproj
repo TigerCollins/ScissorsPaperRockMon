@@ -69,7 +69,6 @@
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\IdleChanger.cs" />
-    <Compile Include="Assets\Asset Packs\UnityChan\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Asset Packs\Water Flow FREE\Scripts\WaterFlowFREEDemo.cs" />
@@ -78,6 +77,10 @@
     <Compile Include="Assets\Scripts\GridMovement\Grid.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridCell.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridMover.cs" />
+    <Compile Include="Assets\Scripts\Menus\Credits.cs" />
+    <Compile Include="Assets\Scripts\Menus\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Menus\Splash.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
   </ItemGroup>
   <ItemGroup>

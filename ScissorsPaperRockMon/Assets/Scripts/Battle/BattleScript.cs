@@ -9,28 +9,34 @@ public class BattleScript : MonoBehaviour {
     void Start()
     {
         
-        print(index);
+        //print(index);
     }
 
     void Update()
     {
+        //Selects a random variable from the Battleoptions Array
+        index = Random.Range(0, EnemyOptions.Length);
     }
 
     public void BattleLoader()
     {
-        index = Random.Range(0, EnemyOptions.Length); //Selects a random variable from the Battleoptions Array
+         
         ChampionTrainer();
     }
 
     public void ScissorsTrainer()
-    {      
-            EnemyOptions[0].SetActive(true); //... Set as active.
-            EnemyOptions[1].SetActive(false); // Disable this in hierarchy
-            EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+    {
+        BattleLoader();
+        EnemyOptions[0].SetActive(true); //... Set as active.
+        EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+        EnemyOptions[2].SetActive(false); // Disable this in hierarchy
+        print("ok");
     }
 
     public void PaperTrainer()
     {
+        print("ok");
+        BattleLoader();
         EnemyOptions[1].SetActive(true); //... Set as active.
         EnemyOptions[0].SetActive(false); // Disable this in hierarchy
         EnemyOptions[2].SetActive(false); // Disable this in hierarchy
@@ -38,6 +44,7 @@ public class BattleScript : MonoBehaviour {
 
     public void RockTrainer()
     {
+        BattleLoader();
         EnemyOptions[2].SetActive(true); // Set as active.
         EnemyOptions[0].SetActive(false); // Disable this in hierarchy
         EnemyOptions[1].SetActive(false); // Disable this in hierarchy
@@ -47,6 +54,7 @@ public class BattleScript : MonoBehaviour {
     {
         if (index == 0) //Checks to see if the object is active. If not active...
         {
+          
             EnemyOptions[0].SetActive(true); //... Set as active.
             EnemyOptions[1].SetActive(false); // Disable this in hierarchy
             EnemyOptions[2].SetActive(false); // Disable this in hierarchy
@@ -54,6 +62,7 @@ public class BattleScript : MonoBehaviour {
 
         if (index == 1) //Checks to see if the object is active. If not active...
         {
+          
             EnemyOptions[1].SetActive(true); //... Set as active.
             EnemyOptions[0].SetActive(false); // Disable this in hierarchy
             EnemyOptions[2].SetActive(false); // Disable this in hierarchy
@@ -61,6 +70,7 @@ public class BattleScript : MonoBehaviour {
 
         if (index == 2) //Checks to see if the object is active. If not active...
         {
+        
             EnemyOptions[2].SetActive(true); //... Set as active.
             EnemyOptions[0].SetActive(false); // Disable this in hierarchy
             EnemyOptions[1].SetActive(false); // Disable this in hierarchy
@@ -71,6 +81,7 @@ public class BattleScript : MonoBehaviour {
     {
         if (PlayerBattleOptions[0].activeInHierarchy == false) //Checks to see if the object is active. If not active...
         {
+
             PlayerBattleOptions[0].SetActive(true); //... Set as active.
             PlayerBattleOptions[1].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[2].SetActive(false); // Disable this in hierarchy
