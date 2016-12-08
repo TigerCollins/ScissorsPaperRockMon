@@ -81,8 +81,10 @@
     <Compile Include="Assets\Scripts\Menus\Credits.cs" />
     <Compile Include="Assets\Scripts\Menus\SceneController.cs" />
     <Compile Include="Assets\Scripts\Menus\Splash.cs" />
-    <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\World\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\World\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\World\RotationScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\BrokenVector\FreeLowPolyPack\README.txt" />
