@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Asset Packs\SapphiArt\SapphiArtchan\Scripts\AnimationManagerUI.cs" />
+    <Compile Include="Assets\Asset Packs\SapphiArt\SapphiArtchan\Scripts\SapphiArtChan_AnimManager.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\IdleChanger.cs" />
@@ -73,7 +75,9 @@
     <Compile Include="Assets\Asset Packs\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Asset Packs\Water Flow FREE\Scripts\WaterFlowFREEDemo.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleScript.cs" />
+    <Compile Include="Assets\Scripts\Battle\FinalHealthHandler.cs" />
     <Compile Include="Assets\Scripts\Battle\HealthHandler.cs" />
+    <Compile Include="Assets\Scripts\Battle\HealthTrigger.cs" />
     <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\GridMovement\Grid.cs" />
     <Compile Include="Assets\Scripts\GridMovement\GridCell.cs" />
@@ -81,14 +85,20 @@
     <Compile Include="Assets\Scripts\Menus\Credits.cs" />
     <Compile Include="Assets\Scripts\Menus\SceneController.cs" />
     <Compile Include="Assets\Scripts\Menus\Splash.cs" />
-    <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\PauseBackgroundMusic.cs" />
+    <Compile Include="Assets\Scripts\World\BattleStart.cs" />
+    <Compile Include="Assets\Scripts\World\BattleStartFinal.cs" />
     <Compile Include="Assets\Scripts\World\PauseScript.cs" />
     <Compile Include="Assets\Scripts\World\PlayerController.cs" />
     <Compile Include="Assets\Scripts\World\RotationScript.cs" />
+    <Compile Include="Assets\Scripts\World\UpperPlayerScript.cs" />
+    <Compile Include="Assets\Scripts\World\UpperRotaterScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\BrokenVector\FreeLowPolyPack\README.txt" />
     <None Include="Assets\Asset Packs\Fantasy Skybox FREE\Readme.txt" />
+    <None Include="Assets\Asset Packs\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
+    <None Include="Assets\Asset Packs\TaichiCharacterPack\Shaders\toon_hair.shader" />
     <None Include="Assets\Asset Packs\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\Asset Packs\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\Asset Packs\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />

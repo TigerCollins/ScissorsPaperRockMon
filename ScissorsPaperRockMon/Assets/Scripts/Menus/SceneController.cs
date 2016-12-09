@@ -6,6 +6,10 @@ public class SceneController : MonoBehaviour {
     //Audio
     public AudioSource ButtonPress;
 
+    //Overworld
+    public Transform OverWorld;
+    public GameObject OverWorldObject;
+
     // Use this for initialization
     void Start ()
     {
@@ -30,6 +34,13 @@ public class SceneController : MonoBehaviour {
         //Loads the Credits
         ButtonPress.Play();
         Application.LoadLevel("Credits");
+    }
+
+    public void Menu()
+    {
+        //Loads the Credits
+        ButtonPress.Play();
+        Application.LoadLevel("Menu");
     }
 
     public void Quit()

@@ -2,14 +2,24 @@
 using System.Collections;
 
 public class BattleScript : MonoBehaviour {
+    //Battle Options
     public GameObject[] PlayerBattleOptions;
     public GameObject[] EnemyOptions;
     int index;
+
+    //Other Scripts (Health)
+    public GameObject HealthTrigger;
 
     void Start()
     {
         
         //print(index);
+    }
+
+    IEnumerator StopHealthHandler()
+    {
+        yield return new WaitForSeconds(.01f);
+        HealthTrigger.SetActive(false);
     }
 
     void Update()
@@ -20,7 +30,6 @@ public class BattleScript : MonoBehaviour {
 
     public void BattleLoader()
     {
-         
         ChampionTrainer();
     }
 
@@ -30,12 +39,10 @@ public class BattleScript : MonoBehaviour {
         EnemyOptions[0].SetActive(true); //... Set as active.
         EnemyOptions[1].SetActive(false); // Disable this in hierarchy
         EnemyOptions[2].SetActive(false); // Disable this in hierarchy
-        print("ok");
     }
 
     public void PaperTrainer()
     {
-        print("ok");
         BattleLoader();
         EnemyOptions[1].SetActive(true); //... Set as active.
         EnemyOptions[0].SetActive(false); // Disable this in hierarchy
@@ -54,7 +61,6 @@ public class BattleScript : MonoBehaviour {
     {
         if (index == 0) //Checks to see if the object is active. If not active...
         {
-          
             EnemyOptions[0].SetActive(true); //... Set as active.
             EnemyOptions[1].SetActive(false); // Disable this in hierarchy
             EnemyOptions[2].SetActive(false); // Disable this in hierarchy
@@ -62,7 +68,6 @@ public class BattleScript : MonoBehaviour {
 
         if (index == 1) //Checks to see if the object is active. If not active...
         {
-          
             EnemyOptions[1].SetActive(true); //... Set as active.
             EnemyOptions[0].SetActive(false); // Disable this in hierarchy
             EnemyOptions[2].SetActive(false); // Disable this in hierarchy
@@ -74,6 +79,7 @@ public class BattleScript : MonoBehaviour {
             EnemyOptions[2].SetActive(true); //... Set as active.
             EnemyOptions[0].SetActive(false); // Disable this in hierarchy
             EnemyOptions[1].SetActive(false); // Disable this in hierarchy
+            
         }
     }
 
@@ -86,6 +92,8 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[1].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[2].SetActive(false); // Disable this in hierarchy
             BattleLoader();
+            HealthTrigger.SetActive(true);
+            StartCoroutine(StopHealthHandler());
         }
     }
 
@@ -97,6 +105,8 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[0].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[2].SetActive(false); // Disable this in hierarchy
             BattleLoader();
+            HealthTrigger.SetActive(true);
+            StartCoroutine(StopHealthHandler());
         }
     }
 
@@ -108,6 +118,8 @@ public class BattleScript : MonoBehaviour {
             PlayerBattleOptions[0].SetActive(false); // Disable this in hierarchy
             PlayerBattleOptions[1].SetActive(false); // Disable this in hierarchy
             BattleLoader();
+            HealthTrigger.SetActive(true);
+            StartCoroutine(StopHealthHandler());
         }
     }
 }

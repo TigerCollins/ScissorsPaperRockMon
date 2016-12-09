@@ -14,7 +14,22 @@ public class PlayerController : MonoBehaviour {
     public Animator anim;
     public GameObject UnityChan; //Finds unity chan
 
+
     // Use this for initialization
+
+    //Lower Player
+    public GameObject LowerPlayer;
+    public GameObject UpperPlayer;
+
+    // Use this for initialization
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "CaveBottom")
+        {
+            LowerPlayer.SetActive(false);
+            UpperPlayer.SetActive(true);
+        }
+    }
     void Start()
     {
         InvokeRepeating("Movement", .8f, .20f); //Calls movement only every so often
@@ -56,12 +71,11 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.Slash))
         {
-            print("ye");
-            anim.SetBool("Rest", true);
+            anim.SetBool("Rest", true);//Plays rest animation
         }
         else
         {
-            anim.SetBool("Rest", false);
+            anim.SetBool("Rest", false);//stops rest animation if nothing is pressed
         }
     }
 
@@ -102,7 +116,7 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            WallHit.Play();
+            WallHit.Play();//Plays audio file when a wall or non movable area is encountered
         }
     }
 
@@ -122,7 +136,7 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            WallHit.Play();
+            WallHit.Play();//Plays audio file when a wall or non movable area is encountered
         }
     }
 
@@ -141,7 +155,7 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            WallHit.Play();
+            WallHit.Play();//Plays audio file when a wall or non movable area is encountered
         }
     }
 }

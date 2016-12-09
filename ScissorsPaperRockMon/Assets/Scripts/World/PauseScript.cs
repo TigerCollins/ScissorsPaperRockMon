@@ -7,7 +7,7 @@ public class PauseScript : MonoBehaviour {
     public GameObject pauseMenu;
 
     //Overworld
-    public GameObject overWorld;
+    public GameObject OverWorld;
 
     //Audio
     public AudioSource ButtonPress;
@@ -52,6 +52,7 @@ public class PauseScript : MonoBehaviour {
         //Loads the Credits
         Time.timeScale = 1;
         ButtonPress.Play();
+        Destroy(OverWorld);
         Application.LoadLevel("Credits");
     }
 
@@ -61,7 +62,8 @@ public class PauseScript : MonoBehaviour {
         Time.timeScale = 1;
         ButtonPress.Play();
         //Disables the overworld to stop frames in menu
-        Application.LoadLevel("Menu");
+        Destroy(OverWorld); 
+        Application.LoadLevel("Menu");//loads the main menu
         
 
     }
@@ -71,6 +73,7 @@ public class PauseScript : MonoBehaviour {
         //Loads scene that displays the controls
         Time.timeScale = 1;
         ButtonPress.Play();
+        Destroy(OverWorld);
         Application.LoadLevel("Controls");
     }
 }
